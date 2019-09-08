@@ -1,23 +1,3 @@
-<?php
-session_start();
-
-$Email = $_POST['email'];
-$Password = $_POST['pass'];
-
-
-$con = mysqli_connect('localhost','root','','demo6');
-
-$query = "SELECT * FROM `adminlogin`  WHERE email = '$Email' && password  = '$Password'";
-
-$run= mysqli_query($con,$query);
-$total = mysqli_num_rows($run);
-
-if($total==1)
-{
-	$_SESSION['username']=$userid;
-	header('location:data.php');
-}else
-{
-	echo"please try again";
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:19c8b9f9c3d6a085d339108012abe7a323725b0313c2b354d3b95ecdd00dea42
+size 431

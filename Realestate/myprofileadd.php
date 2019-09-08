@@ -1,23 +1,3 @@
-<?php
-$id= $_GET['id'];
-
-$approval = $_POST['app'];
-
-$con = mysqli_connect('localhost','root','','demo6');
-
-$query = "INSERT INTO `alerts`( '','approval`,'id') VALUES ('','$approval','$id') ";
-
-
-
-$run= mysqli_query($con,$query);
-
-if($run==1)
-{
-	
-	header("Location:myprofile.php");
-}	
-else
-{
-	echo"something went wrong!";
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:6e8913dbfd73a83a1905c0eac8d56a1f675c7299cb056eee9287df193c353a6c
+size 347

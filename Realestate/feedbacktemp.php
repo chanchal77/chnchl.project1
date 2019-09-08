@@ -1,26 +1,3 @@
-<?php
-//$Email = $_POST['email'];
-
-require 'PHPMailerAutoload.php';
-$mail = new PHPMailer;
-
-$mail->Host='smtp.gmail.com';
-$mail->Port=587;
-
-$mail->SMTPAuth=true;
-$mail->SMTPSecure='tls';
-$mail->Username='chanchalbendkule7@gmail.com';
-$mail->Password='prabhunath';
-$mail->setFrom=($_POST['email']);
-$mail->addAddress('chanchalbendkule77@gmail.com');
-$mail->addReplyTo($_POST['email']);
-$mail->isHTML(true);
-$mail->Subject='Form Submission:'.$_POST['subject'];
-
-if(!$mail->send())
-{
-	echo"sry";
-}else{
-	echo"ok";
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:295e9f4702891eff5a7cb9e38c7a42108ee8f0e672a1c7cfc7e804820f1bf87a
+size 540

@@ -1,31 +1,3 @@
-<?php
-		
-		
-		
-		
-        $Name = $_FILES['image']['tmp_name'];
-		$img = $_FILES['image']['name'];
-		$folder = "image/".$img;
-		
-
-		
-		move_uploaded_file($Name,$folder);
-        
-		
-		$con = mysqli_connect('localhost','root','','demo6');
-
-
-	
-	$query = "UPDATE `registration` SET `image`='$folder' WHERE username='$UName'";
-
-	$run= mysqli_query($con,$query);
-
-	if($run==1)
-	{
-		echo $folder.$img.$Name;
-	}else
-	{
-		echo"Error!";
-	}
-
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fe812edd41f9d39304baac3cf1ac397cd4c2f0dc247c36b0b6b05697dc5a5e3
+size 464
